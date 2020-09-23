@@ -7,7 +7,7 @@
     "serve": "serve coverage/dist",
     "a11y": "npx patternfly-a11y",
     "clean": "rm -rf coverage",
-    "test": "yarn clean && yarn a11y --prefix https://pf4.patternfly.org/ components/table"
+    "test": "yarn clean && yarn a11y --prefix https://pf4.patternfly.org/ --context \"document.querySelector('.ws-mdx-content')\" components/table,components/alert"
   },
   "dependencies": {
     "@patternfly/patternfly-a11y": "^2.0.5",
