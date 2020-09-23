@@ -1,0 +1,18 @@
+{
+  "name": "a11y",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "serve coverage/dist",
+    "a11y": "npx patternfly-a11y",
+    "clean": "rm -rf coverage",
+    "test": "yarn clean && yarn a11y --prefix https://pf4.patternfly.org/ components/table"
+  },
+  "dependencies": {
+    "@patternfly/patternfly-a11y": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "serve": "^11.3.2"
+  }
+}
